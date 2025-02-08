@@ -20,6 +20,7 @@ class TableViewController: UITableViewController {
             if let text = alert.textFields?.first?.text, !text.isEmpty {
                 self.memos.append(text)
                 self.tableView.reloadData()
+                self.saveMemo()
             }
         }
         
@@ -29,8 +30,20 @@ class TableViewController: UITableViewController {
         present(alert, animated: true, completion: nil)
     }
     
+    func saveMemo() {
+        UserDefaults.standard.set(self.memos, forKey: "memos")
+    }
+    
+    func loadMemo() {
+        if let savedMemos = UserDefaults.standard.array(forKey: "memos") as? [String] {
+            self.memos = savedMemos
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loadMemo()
     }
 }
 
@@ -52,6 +65,7 @@ extension TableViewController {
         if editingStyle == .delete {
             memos.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .automatic)
+            saveMemo()
         }
     }
 }
