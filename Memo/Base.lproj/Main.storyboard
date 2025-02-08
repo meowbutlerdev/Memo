@@ -38,7 +38,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="mAS-4d-JvC">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="Pmx-3F-Pls"/>
+                                <action selector="addButtonTapped:" destination="Ied-tv-iB9" id="HPt-dP-5F4"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -85,9 +85,6 @@
             <point key="canvasLocation" x="-578" y="-32"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="LmE-ao-OgT"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
