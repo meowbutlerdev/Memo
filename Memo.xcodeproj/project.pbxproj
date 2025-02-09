@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BF7E98A82D588ABE0022D49B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BF7E98A72D588ABA0022D49B /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		BF57C5B32D55DC6B00EBAB9D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		BF57C59C2D55DC6A00EBAB9D /* Memo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF57C5B22D55DC6B00EBAB9D /* MemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF57C5BC2D55DC6B00EBAB9D /* MemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF7E98A72D588ABA0022D49B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -56,6 +61,11 @@
 		BF57C5BF2D55DC6B00EBAB9D /* MemoUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = MemoUITests;
+			sourceTree = "<group>";
+		};
+		BF7E98A42D588A700022D49B /* image */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = image;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -88,6 +98,8 @@
 		BF57C5932D55DC6A00EBAB9D = {
 			isa = PBXGroup;
 			children = (
+				BF7E98A72D588ABA0022D49B /* README.md */,
+				BF7E98A42D588A700022D49B /* image */,
 				BF57C59E2D55DC6A00EBAB9D /* Memo */,
 				BF57C5B52D55DC6B00EBAB9D /* MemoTests */,
 				BF57C5BF2D55DC6B00EBAB9D /* MemoUITests */,
@@ -122,6 +134,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				BF57C59E2D55DC6A00EBAB9D /* Memo */,
+				BF7E98A42D588A700022D49B /* image */,
 			);
 			name = Memo;
 			packageProductDependencies = (
@@ -225,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF7E98A82D588ABE0022D49B /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
